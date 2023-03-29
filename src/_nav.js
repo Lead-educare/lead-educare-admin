@@ -1,7 +1,8 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
-import {cilPuzzle, cilSpeedometer} from '@coreui/icons'
+import {cilPuzzle, cilSpeedometer,cilSettings} from '@coreui/icons'
 import { CNavGroup, CNavItem } from '@coreui/react'
+
 
 const _nav = [
   {
@@ -28,5 +29,12 @@ const _nav = [
       },
     ],
   },
+  {
+    component: CNavItem,
+    name: 'Setting',
+    to: '/setting',
+    icon: <CIcon icon={cilSettings} customClassName="nav-icon" />,
+  },
+
 ]
 export default _nav

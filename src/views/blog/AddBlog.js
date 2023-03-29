@@ -16,6 +16,7 @@ const AddBlog = () => {
         control,
         watch
     } = useForm()
+    
     const [editorState, setEditorState] = useState(EditorState.createEmpty())
     const onEditorState = (editorState) => setEditorState(editorState)
 
@@ -92,6 +93,7 @@ const AddBlog = () => {
                             />
                         </div>
                         <div className="col-md-12">
+                        
                             <Editor
                                 editorState={editorState}
                                 rows={5}
