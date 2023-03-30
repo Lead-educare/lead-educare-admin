@@ -1,5 +1,6 @@
 import { CAvatar, CBadge, CButton, CCard, CCardBody, CImage, CTable, CTableBody, CTableDataCell, CTableHead, CTableHeaderCell, CTableRow } from '@coreui/react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TeacherList = () => {
   return (
@@ -31,7 +32,7 @@ const TeacherList = () => {
                       English
                     </CTableDataCell>
                     <CTableDataCell style={{textAlign: 'right'}}>
-                      <CButton style={{borderRadius: 0}} color='dark' className="text-left text-white">Details</CButton>
+                      <CButton component={Link} to='/teacherdetails' style={{borderRadius: 0}} color='dark' className="text-left text-white">Details</CButton>
                     </CTableDataCell>
                   </CTableRow>
                 ))

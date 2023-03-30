@@ -39,7 +39,7 @@ const AddTeacher = () => {
     }
     return (
         <div>
-            <div style={{boxShadow: '-4px 4px 13px 4px #00000017'}} className='card-body'>
+            <div style={{ boxShadow: '-4px 4px 13px 4px #00000017' }} className='card-body'>
                 <h4 className='my-4'>Add Teacher</h4>
 
                 <CForm onSubmit={handleSubmit(onSubmit)}>
@@ -61,7 +61,7 @@ const AddTeacher = () => {
                                 placeholder="Tags - Use comma seperator"
                                 floatingLabel={<div style={{ color: '#808080' }}>Email Address</div>}
                                 {...register('tags', { required: true })}
-                                className=""
+                                className="mb-3"
                             />
                         </div>
                         <div className="col-md-6">
@@ -70,6 +70,7 @@ const AddTeacher = () => {
                                 name="CategoryID"
                                 render={({ field: { onChange, value, ref, name } }) => (
                                     <Select
+                                        className="mb-3"
                                         options={categoryOptions}
                                         placeholder="Categories"
                                         onChange={(option) => {
