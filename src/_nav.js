@@ -28,5 +28,23 @@ const _nav = [
       },
     ],
   },
+  {
+    component: CNavGroup,
+    name: 'Teacher',
+    to: '/teacher',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Add Teacher',
+        to: '/teacher',
+      },
+      {
+        component: CNavItem,
+        name: 'Summary',
+        to: '/summary',
+      },
+    ],
+  },
 ]
 export default _nav
