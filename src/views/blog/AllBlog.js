@@ -17,7 +17,7 @@ const AllBlog = () => {
                     </div>
                     <CTable>
                         <CTableHead>
-                            <CTableRow style={{backgroundColor:'#dfe6e9'}}>
+                            <CTableRow style={{ backgroundColor: '#dfe6e9' }}>
                                 <CTableHeaderCell className="py-3" scope="col" style={{ fontSize: '14px' }}>
                                     Title
                                 </CTableHeaderCell>
@@ -34,7 +34,7 @@ const AllBlog = () => {
                                 <CTableDataCell style={{ fontSize: '14px', color: '#8E98AA' }}>Title</CTableDataCell>
                                 <CTableDataCell style={{ fontSize: '14px', color: '#8E98AA' }}> 12.01.2022</CTableDataCell>
                                 <CTableDataCell className="d-flex align-items-center justify-content-center w-full">
-                                    <div                                        
+                                    <div
                                     >
                                         <FiEdit className="cursor-pointer mx-3" />
                                     </div>
